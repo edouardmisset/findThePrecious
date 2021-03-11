@@ -87,5 +87,13 @@ form > * {
 /* ================
   Components
   ================*/
+.rings {
+  display: flex;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 3px solid #e8df7d;
+  box-shadow: 3px 3px 5px #ada21f;
+}
 
 /*# sourceMappingURL=style.css.map */

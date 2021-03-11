@@ -16,9 +16,6 @@ $text-light: hsl(0, 0%, 95%);
 $default-margin: 1rem;
 $default-box-height: 15rem;
 $text-dark: hsl(0, 0%, 25%);
-$ring-color: hsl(60, 70%, 50%);
-$ring-size: 4em;
-$ring-shadow: 3px 3px 5px darken($ring-color, 10%);
 
 /* ================
     Global styles
@@ -100,3 +97,15 @@ form {
 /* ================
   Components
   ================*/
+$ring-color: hsl(55, 70%, 50%);
+$ring-size: 4em;
+$ring-shadow: 3px 3px 5px darken($ring-color, 10%);
+
+.rings {
+  display: flex;
+  width: $ring-size;
+  height: $ring-size;
+  border-radius: 50%;
+  border: 3px solid lighten($ring-color, 20%);
+  box-shadow: $ring-shadow;
+}
