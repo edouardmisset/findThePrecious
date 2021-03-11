@@ -18,6 +18,9 @@ $text-light: hsl(0, 0%, 95%);
 $default-margin: 1rem;
 $default-box-height: 15rem;
 $text-dark: hsl(0, 0%, 25%);
+$ring-color: hsl(60, 70%, 50%);
+$ring-size: 4em;
+$ring-shadow: 3px 3px 5px darken($ring-color, 10%);
 
 /* ================
     Global styles
@@ -28,15 +31,12 @@ $text-dark: hsl(0, 0%, 25%);
     ================*/
 body {
   margin: 0;
+  padding: 0;
   color: $text-dark;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* ================
     Layout
-    ================*/
-
-/* ================
-    Components
     ================*/
 
 ul {
@@ -98,3 +98,7 @@ form {
     margin-bottom: $default-margin;
   }
 }
+
+/* ================
+  Components
+  ================*/
