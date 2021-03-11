@@ -1,0 +1,104 @@
+/* Table of content
+  0. Global variables
+  1. Global styles
+  2. typography
+  3. Layout
+  4. Components
+*/
+
+/* ================
+  Global variables
+  ================*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+:root {
+  --color-box: hsl(0, 0%, 85%);
+  --text-dark: hsl(0, 0%, 25%);
+  --text-light: hsl(0, 0%, 95%);
+  --default-margin: 1rem;
+  --default-box-height: 15rem;
+}
+
+/* ================
+    Global styles
+    ================*/
+
+/* ================
+    Typography
+    ================*/
+body {
+  color: var(--text-dark);
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ================
+    Layout
+    ================*/
+
+/* ================
+    Components
+    ================*/
+
+ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background: var(--text-dark);
+  color: var(--text-light);
+}
+
+ul > li {
+  text-decoration: none;
+  list-style: none;
+  padding: var(--default-margin);
+}
+
+.carousel {
+  background: var(--color-box);
+  height: var(--default-box-height);
+  width: 100%;
+}
+
+.articles {
+  display: flex;
+  height: var(--default-box-height);
+  width: 100%;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.articles > article {
+  background: var(--color-box);
+  flex-grow: 1;
+}
+.articles > article:nth-child(2) {
+  margin-left: var(--default-margin);
+  margin-right: var(--default-margin);
+}
+
+section > h2 {
+  text-align: center;
+}
+
+h2 > span {
+  font-size: small;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--text-dark);
+  border: 0 none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+form > * {
+  margin-top: var(--default-margin);
+  margin-bottom: var(--default-margin);
+}
